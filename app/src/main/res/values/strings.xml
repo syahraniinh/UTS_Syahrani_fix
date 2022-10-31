@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UTS_Syahrani</string>
+    <string-array name="arr_daftar_jalur_pendaftaran">
+        <item>Jalur tanpa tes</item>
+        <item>Tes tertulis</item>
+        <item>Wawancara</item>
+        <item>Rekomendasi</item>
+    </string-array>
+</resources>

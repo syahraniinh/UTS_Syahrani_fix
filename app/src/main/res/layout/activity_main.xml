@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:text="FORMULIR PENDAFTARAN"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/et_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        />
+
+    <EditText
+        android:id="@+id/et_nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Pendaftaran"
+        android:layout_marginTop="160sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        />
+
+    <Spinner
+        android:id="@+id/jalur_pd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:entries="@array/arr_daftar_jalur_pendaftaran"
+
+        />
+
+    <CheckBox
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi daftar"
+        android:layout_below="@+id/jalur_pd"
+        android:layout_marginLeft="40sp"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <Button
+        android:id="@+id/btn_daftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirm"
+        android:layout_marginTop="5dp"
+        android:text="Daftar"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        />
+
+
+
+</RelativeLayout>
